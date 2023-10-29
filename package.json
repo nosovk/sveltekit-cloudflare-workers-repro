@@ -38,7 +38,7 @@
     "postcss-scss": "^4.0.7",
     "prettier": "~2.8.8",
     "prettier-plugin-svelte": "^2.10.1",
-    "rehype-autolink-headings": "^6.1.1",
+    "rehype-autolink-headings": "^7.0.0",
     "rehype-slug": "^5.1.0",
     "remark-abbr": "^1.4.1",
     "sass": "^1.64.2",
