@@ -20,7 +20,7 @@ const config = {
   kit: { adapter: adapter(),
     paths: {
     relative: false,
-    base: "/b4u"
+    base: "/blog"
   }
   },
 };
