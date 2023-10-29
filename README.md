@@ -1,30 +1,7 @@
 # create-svelte
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
+Reproduction for ticket: https://github.com/sveltejs/kit/issues/10937
 
-## Developing
+Url to test: https://sveltekit-cloudflare-workers-repro.nosovk.workers.dev/blog
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-```bash
-npm run build
-```
-
-> You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
-
-## Deploying
-
-[Link to CF pages](https://dash.cloudflare.com/b14db6c3c82e79b8dd140e267450f905/pages/view/businessforukraine/)
-
-Production branch attached to production. Main for staging.
-
-[preview for main branch](https://main.businessforukraine.pages.dev/)
+When you try to launch project local everething works as expected, problem only when we stick to cloudflare-worker-adapter
