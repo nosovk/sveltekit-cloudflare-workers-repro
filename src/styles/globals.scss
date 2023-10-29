@@ -1,0 +1,356 @@
+* {
+  outline: none !important;
+  box-sizing: border-box;
+
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+html {
+  height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow: hidden;
+  width: 100%;
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: var(--color-bg);
+  font-family: var(--font-eukraine);
+  font-size: var(--size-14);
+  font-display: swap;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+
+  &::-webkit-scrollbar {
+    width: var(--size-14);
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: var(--color-secondary-light);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border: var(--size-2) solid var(--color-secondary);
+    border-radius: var(--size-0);
+    background-color: var(--color-secondary);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: var(--color-secondary);
+}
+
+p {
+  font-size: var(--size-14);
+}
+
+a,
+button,
+.link,
+.btn {
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  transition: color var(--transition-default) var(--timing-function-default),
+    background-color var(--transition-default) var(--timing-function-default),
+    border-color var(--transition-default) var(--timing-function-default),
+    filter var(--transition-default) var(--timing-function-default);
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+strong,
+.strong {
+  font-weight: var(--weight-700);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  pointer-events: none;
+  touch-action: none;
+  user-select: none;
+}
+
+#svelte {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+
+  & > h1,
+  & > p {
+    text-align: center;
+  }
+}
+
+main {
+  flex: 1 0 auto;
+  padding: 0 var(--size-30);
+  margin: 0;
+
+  @media screen and (min-width: $min-width-tablet) {
+    width: 100%;
+    max-width: 76.25rem;
+    margin: 0 auto;
+    padding: 0 6.875rem;
+  }
+}
+
+[disabled] {
+  cursor: not-allowed;
+}
+
+.btn {
+  @extend %flex-center;
+
+  width: fit-content;
+  height: var(--size-32);
+  padding: 0 var(--size-20);
+  border: none;
+  background-color: var(--color-red);
+  color: var(--color-white);
+  font-size: var(--size-15);
+  font-weight: var(--weight-700);
+  text-align: center;
+
+  &:hover {
+    background-color: var(--color-red-light);
+  }
+
+  &:active,
+  &:focus {
+    background-color: var(--color-secondary);
+  }
+
+  &:disabled {
+    background-color: var(--color-secondary-light);
+
+    &:hover {
+      background-color: var(--color-light);
+    }
+  }
+}
+
+.link {
+  @extend %link;
+}
+
+.link-light {
+  @extend %link;
+
+  background-color: var(--transparent);
+  @include font(var(--size-16), var(--weight-400), var(--size-22), var(--color-primary));
+
+  &:hover {
+    background-color: var(--transparent);
+  }
+}
+
+.text-1 {
+  @include font(var(--size-28), var(--weight-700), var(--size-32), var(--color-secondary));
+
+  letter-spacing: 0.02em;
+
+  @media screen and (min-width: $min-width-medium) {
+    font-size: var(--size-58);
+    line-height: var(--size-68);
+  }
+}
+
+.text-2 {
+  @include font(var(--size-22), var(--weight-500), var(--size-32), var(--color-secondary));
+
+  letter-spacing: 0.04em;
+
+  @media screen and (min-width: $min-width-medium) {
+    font-size: var(--size-46);
+    line-height: var(--size-58);
+  }
+}
+
+.text-3 {
+  @include font(var(--size-18), var(--weight-400), var(--size-32), var(--color-secondary));
+}
+
+.text-4 {
+  @include font(var(--size-16), var(--weight-400), var(--size-22), var(--color-secondary));
+}
+
+.text-3,
+.text-4 {
+  @media screen and (min-width: $min-width-medium) {
+    font-size: var(--size-30);
+    line-height: var(--size-42);
+  }
+}
+
+.text-5 {
+  @include font(var(--size-15), var(--weight-700), var(--size-22), var(--color-secondary));
+
+  @media screen and (min-width: $min-width-medium) {
+    font-size: var(--size-18);
+    line-height: var(--size-22);
+  }
+}
+
+.text-6 {
+  @include font(var(--size-14), var(--weight-500), var(--size-22), var(--color-secondary));
+
+  @media screen and (min-width: $min-width-medium) {
+    font-size: var(--size-20);
+    line-height: var(--size-30);
+  }
+}
+
+.text-7 {
+  @include font(var(--size-14), var(--weight-400), var(--size-20), var(--color-secondary));
+
+  @media screen and (min-width: $min-width-medium) {
+    font-size: var(--size-15);
+    line-height: var(--size-22);
+  }
+}
+
+.text-8 {
+  @include font(var(--size-11), var(--weight-400), var(--size-26), var(--color-secondary));
+
+  letter-spacing: 0.1em;
+}
+
+.text-9 {
+  @include font(var(--size-12), var(--weight-400), var(--size-18), var(--color-secondary));
+}
+
+.text-footer {
+  @include font(var(--size-14), var(--weight-400), var(--size-26), var(--color-secondary));
+}
+
+.text-8,
+.text-9,
+.text-footer {
+  @media screen and (min-width: $min-width-medium) {
+    font-size: var(--size-15);
+    line-height: var(--size-22);
+  }
+}
+
+.text-breadcrumbs {
+  @include font(var(--size-10), var(--weight-400), var(--size-12), var(--color-secondary));
+
+  letter-spacing: 0.02em;
+
+  @media screen and (min-width: $min-width-medium) {
+    font-size: var(--size-12);
+    line-height: var(--size-14);
+  }
+}
+
+.text-about {
+  @include font(var(--size-14), var(--weight-400), var(--size-24), var(--color-secondary));
+
+  @media screen and (min-width: $min-width-medium) {
+    font-size: var(--size-20);
+    line-height: var(--size-30);
+  }
+}
+
+.text-about-large {
+  @include font(var(--size-16), var(--weight-400), var(--size-30), var(--color-secondary));
+
+  @media screen and (min-width: $min-width-medium) {
+    font-size: var(--size-26);
+    line-height: var(--size-38);
+  }
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.bold-500 {
+  font-weight: var(--weight-500);
+}
+
+.bold-700 {
+  font-weight: var(--weight-500);
+}
+
+.page {
+  .list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    @media screen and (min-width: $min-width-large) {
+      flex-flow: row wrap;
+      align-items: flex-start;
+    }
+  }
+
+  h1 {
+    margin: 0 0 var(--size-10);
+  }
+
+  a {
+    &.text-2 {
+      display: block;
+      margin-bottom: var(--size-10);
+
+      &:hover {
+        color: var(--color-secondary-light);
+      }
+    }
+  }
+
+  hr {
+    display: none;
+    height: var(--size-4);
+    border: none;
+    margin-bottom: var(--size-36);
+    background-color: var(--color-red);
+
+    @media screen and (min-width: $min-width-large) {
+      display: block;
+    }
+  }
+}

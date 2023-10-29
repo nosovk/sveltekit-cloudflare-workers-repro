@@ -1,0 +1,17 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Zakhar Tkachuk -- frontend developer -- <z.tkachuk@nodeart.io>
+    Nosov Konstantin -- guy with deadlines and passion to google -- <nosov@nodeart.io>
+
+# THANKS
+
+    Vlad Kondratenko - for support during timing fails -- <v.kondratenko@nodeart.io>
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Svelte, SvelteKit
+    CloudFlare Pages
