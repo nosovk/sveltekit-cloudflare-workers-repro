@@ -21,6 +21,7 @@
   <section>
     <p>relative link:</p>
     <a href="{base}/about" class="text-2">What We Do</a>
+    <a href="{base}/prerender" class="text-2">Prerender</a>
   </section>
   <p>base: {base}</p>
   <p>assets: {assets}</p>
