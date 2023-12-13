@@ -34,7 +34,7 @@
     "mdsvex": "^0.11.0",
     "postcss": "^8.4.31",
     "postcss-html": "^1.5.0",
-    "postcss-load-config": "^4.0.2",
+    "postcss-load-config": "^5.0.2",
     "postcss-scss": "^4.0.9",
     "prettier": "~3.1.0",
     "prettier-plugin-svelte": "^3.1.1",
