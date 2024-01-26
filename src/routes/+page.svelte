@@ -25,6 +25,11 @@
   </section>
   <p>base: {base}</p>
   <p>assets: {assets}</p>
+  <a href={base+"/1"}>Page 1</a>
+  <a href={base+"/2"}>Page 2</a>
+  <a href={base+"/3"}>Page 3</a>
+  <a href={base+"/4"}>Page 4</a>
+
   <code>{@html JSON.stringify($page)}</code>
 </main>
 
