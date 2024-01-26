@@ -2,7 +2,7 @@
   import Seo from '$lib/components/Seo/index.svelte';
   import { websiteSchema } from '$lib/utils/json-ld';
   import data from '$lib/utils/site-data';
-
+  import { base} from '$app/paths';
   export let status: number;
   export let error: Error;
 
