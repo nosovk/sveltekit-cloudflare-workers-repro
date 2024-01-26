@@ -57,7 +57,7 @@
     "unist-util-visit": "^5.0.0",
     "vite": "^4.5.0",
     "vite-imagetools": "^6.2.9",
-    "wrangler": "^3.23.0",
+    "wrangler": "^3.25.0",
     "xmlbuilder2": "^3.1.1"
   },
   "type": "module",
