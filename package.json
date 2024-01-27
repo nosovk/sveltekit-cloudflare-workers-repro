@@ -46,7 +46,7 @@
     "stylelint": "^15.11.0",
     "stylelint-config-recommended-scss": "^13.0.0",
     "stylelint-config-standard": "^34.0.0",
-    "stylelint-scss": "^5.3.1",
+    "stylelint-scss": "^6.0.0",
     "svelte": "^4.2.9",
     "svelte-check": "^3.6.3",
     "svelte-paginate": "^0.1.0",
